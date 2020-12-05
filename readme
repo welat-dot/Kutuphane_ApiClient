@@ -1,1 +1,5 @@
-
+projeyi çalıştırabilmek için
+\KutuphaneApiClient\KutuphaneApi\KutuphaneDataAccess\Context\KutuphaneContext.cs
+dosyasında "optionsBuilder.UseMySql(connectionString: optionsBuilder.UseMySql(connectionString: @"server = localhost; user = username; password = password; database = dbAdı;");
+satırına kendi Mysql giriş bilgilerinizi ekleyiniz sonrada KutuphaneDataAccess dllni derleyip projeyi çalıştırınız
+proje Db si codefirst codlanmıştır api projesi ayağa kalktığında database oluşturulacaktır.

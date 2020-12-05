@@ -10,7 +10,7 @@ namespace KutuphaneDataAccess.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(connectionString: @"server = localhost; user = root; password = welat.123; database = kutuphaneDB;");
+            optionsBuilder.UseMySql(connectionString: @"server = localhost; user = username; password = password; database = dbAdı;");
         }
 
         public DbSet<Yazar> Yazars { get; set; }
