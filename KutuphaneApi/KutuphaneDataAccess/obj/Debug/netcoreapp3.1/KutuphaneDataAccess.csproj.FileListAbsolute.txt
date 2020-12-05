@@ -1,0 +1,11 @@
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.AssemblyInfoInputs.cache
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.AssemblyInfo.cs
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\bin\Debug\netcoreapp3.1\KutuphaneDataAccess.deps.json
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\bin\Debug\netcoreapp3.1\KutuphaneDataAccess.runtimeconfig.json
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\bin\Debug\netcoreapp3.1\KutuphaneDataAccess.runtimeconfig.dev.json
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\bin\Debug\netcoreapp3.1\KutuphaneDataAccess.dll
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\bin\Debug\netcoreapp3.1\KutuphaneDataAccess.pdb
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.dll
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.pdb
+C:\Users\vedat\source\repos\KutuphaneApi\KutuphaneDataAccess\obj\Debug\netcoreapp3.1\KutuphaneDataAccess.genruntimeconfig.cache

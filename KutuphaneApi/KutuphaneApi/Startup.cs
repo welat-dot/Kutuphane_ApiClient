@@ -1,0 +1,65 @@
+using KutuphaneDataAccess.DatabaseIslemleri.Abstract;
+using KutuphaneDataAccess.DatabaseIslemleri.Concreate;
+using KutuphaneDataAccess.Context;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+namespace KutuphaneApi
+{
+	public class Startup
+	{
+		public Startup(IConfiguration configuration)
+		{
+			Configuration = configuration;
+		}
+
+		public IConfiguration Configuration { get; }
+
+		// This method gets called by the runtime. Use this method to add services to the container.
+		public void ConfigureServices(IServiceCollection services)
+		{
+            services.AddScoped<IUye,UyeManager>();
+            services.AddScoped<IKitap, KitapManager>();
+            services.AddScoped<IYazar,YazarManager>();
+            services.AddDbContext<KutuphaneContext>();
+            services.AddControllers();
+		}
+
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, KutuphaneContext kutuphaneContext)
+		{
+			if (env.IsDevelopment())
+			{
+                var a = kutuphaneContext.Database.EnsureCreated();
+               kutuphaneContext.Database.Migrate();     
+               
+
+				app.UseDeveloperExceptionPage();
+               
+                
+			}
+
+			app.UseHttpsRedirection();
+
+			app.UseRouting();
+
+			app.UseAuthorization();
+
+			app.UseEndpoints(endpoints =>
+			{
+				endpoints.MapControllers();
+			});
+		}
+	}
+}
